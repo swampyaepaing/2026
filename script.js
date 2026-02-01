@@ -121,12 +121,17 @@ function createFloatingElements() {
 // Set random position for floating elements
 function setRandomPosition(element) {
   element.style.left = Math.random() * 100 + "vw";
+
+  // ✅ Start below the screen so it floats up like emojis
+  element.style.top = "0px";
+
   element.style.animationDelay = Math.random() * 5 + "s";
   element.style.animationDuration = 10 + Math.random() * 20 + "s";
 
   // random horizontal drift for each element
   element.style.setProperty("--float-distance", (Math.random() * 120 - 60) + "px");
 }
+
 
 
 
