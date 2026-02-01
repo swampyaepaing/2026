@@ -324,7 +324,7 @@ h2 {
   object-fit: cover;
   border-radius: 18px;
   pointer-events: none;
-  opacity: 0.95;
+  opacity: 0;
 }
 
 
