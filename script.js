@@ -130,6 +130,9 @@ function setRandomPosition(element) {
 
   // random horizontal drift for each element
   element.style.setProperty("--float-distance", (Math.random() * 120 - 60) + "px");
+    setTimeout(() => {
+    element.style.opacity = "0.95";
+  }, 50);
 }
 
 
