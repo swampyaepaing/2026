@@ -34,6 +34,8 @@ body {
     max-width: 600px;
     margin: 20px;
     overflow: visible !important;
+    position: relative;
+    z-index: 5;
 }
 
 .floating-elements {
@@ -325,8 +327,6 @@ h2 {
   border-radius: 18px;
   pointer-events: none;
   opacity: 0.95;
-
-  /* Use the SAME animation as your emojis */
-  animation: floatUp linear infinite;
+  animation: float var(--float-duration) linear infinite;
 }
 
