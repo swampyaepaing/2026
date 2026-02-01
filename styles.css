@@ -316,13 +316,17 @@ h2 {
     transform: scale(1.05);
     background: var(--secondary-color);
 } 
-.floating-photo {
+
+.floating-photo{
   position: absolute;
+  width: 90px;
+  height: 90px;
   object-fit: cover;
   border-radius: 18px;
   pointer-events: none;
   opacity: 0.95;
-  filter: drop-shadow(0 10px 18px rgba(0,0,0,0.15));
+
+  /* Use the SAME animation as your emojis */
   animation: floatUp linear infinite;
 }
 
