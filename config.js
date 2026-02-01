@@ -19,11 +19,11 @@ const CONFIG = {
     },
     // Floating photos (add your image paths here)
     floatingImages: [
-        "assets/1.HEIC",
+        "assets/1.jpg",
         "assets/2.jpg",
-        "assets/3.heic",
-        "assets/4.JPG",
-        "assets/5.JPG"
+        "assets/3.jpg",
+        "assets/4.jpg",
+        "assets/5.jpg"
 ],
 
 
