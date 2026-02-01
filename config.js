@@ -25,6 +25,13 @@ const CONFIG = {
         "4.jpg",
         "5.jpg"
 ],
+    photoFloat: {
+      enabled: true,
+      count: 40,          // <-- change this (e.g., 20, 40, 80)
+      minSize: 55,
+      maxSize: 110
+},
+
 
 
     // Questions and answers
