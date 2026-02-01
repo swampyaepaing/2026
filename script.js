@@ -105,6 +105,17 @@ function createFloatingElements() {
         setRandomPosition(div);
         container.appendChild(div);
     });
+    // Create photos
+(config.floatingImages || []).forEach(src => {
+    const img = document.createElement('img');
+    img.className = 'floating-photo';
+    img.src = src;
+    img.alt = '';
+    img.loading = 'lazy';
+    setRandomPosition(img);
+    container.appendChild(img);
+});
+
 }
 
 // Set random position for floating elements
@@ -112,7 +123,16 @@ function setRandomPosition(element) {
     element.style.left = Math.random() * 100 + 'vw';
     element.style.animationDelay = Math.random() * 5 + 's';
     element.style.animationDuration = 10 + Math.random() * 20 + 's';
+    element.style.setProperty('--drift', (Math.random() * 80 - 40) + 'px');
+
+    // If it's an image, randomize size a bit
+    if (element.tagName === 'IMG') {
+        const size = 70 + Math.random() * 50; // 70px to 120px
+        element.style.width = size + 'px';
+        element.style.height = size + 'px';
+    }
 }
+
 
 // Function to show next question
 function showNextQuestion(questionNumber) {
