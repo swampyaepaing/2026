@@ -321,12 +321,13 @@ h2 {
 
 .floating-photo{
   position: absolute;
+  animation: float var(--float-duration) linear infinite;
   width: 90px;
   height: 90px;
   object-fit: cover;
   border-radius: 18px;
   pointer-events: none;
   opacity: 0.95;
-  animation: float var(--float-duration) linear infinite;
 }
+
 
