@@ -53,13 +53,10 @@ body {
 }
 
 @keyframes float {
-    0% {
-        transform: translateY(100vh) translateX(0);
-    }
-    100% {
-        transform: translateY(-100px) translateX(var(--float-distance));
-    }
+  0%   { transform: translateY(120vh) translateX(0); }
+  100% { transform: translateY(-150px) translateX(var(--float-distance)); }
 }
+
 
 .cute-btn {
     background: var(--button-color);
