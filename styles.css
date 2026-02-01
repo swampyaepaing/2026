@@ -325,7 +325,4 @@ h2 {
   filter: drop-shadow(0 10px 18px rgba(0,0,0,0.15));
   animation: floatUp linear infinite;
 }
-@keyframes floatUp {
-  0% { transform: translateY(110vh) translateX(0) rotate(0deg); }
-  100% { transform: translateY(-30vh) translateX(var(--drift, 40px)) rotate(12deg); }
-}
+
