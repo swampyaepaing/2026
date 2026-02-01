@@ -320,8 +320,8 @@ h2 {
 .floating-photo{
   position: absolute;
   animation: float var(--float-duration) linear infinite;
-  width: 320px;
-  height: 320px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border-radius: 18px;
   pointer-events: none;
